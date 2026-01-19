@@ -4,25 +4,23 @@ import { Download } from 'lucide-react'
 
 export default function Hero() {
     return (
-        <div id="#inicio" className="w-screen flex md:flex-row justify-around items-center mt-20 flex-col-reverse">
-            <div className="flex flex-col space-y-4 text-center md:text-justify mt-8">
-                <div className="grid grid-cols-2 space-y-2 md:flex md:flex-row space-x-4 p-4 text-xs md:text-md w-full sm:w-[90%]">
+        <div className="w-full mt-20 px-8 flex flex-col-reverse justify-around items-center md:flex-row">
+            <div className="text-center md:text-justify space-y-2 mt-8 md:mt-0">
+                <div className="flex flex-row space-x-2">
                     <Badge text="HTML" color="red"/>
-                    <Badge text="CSS" color="blue" />
-                    <Badge color="yellow" text="JS" />
-                    <Badge text="TypeScript" color="blue" />
-                    <Badge text="NextJS" color="gray" />
-                    <Badge text="Fastify" color="red" />
+                    <Badge text="CSS" color="blue"/>
+                    <Badge text="JS" color="yellow"/>
+                    <Badge text="TypeScript" color="blue"/>
+                    <Badge text="NextJS" color="gray"/>
+                    <Badge text="Fastify" color="red"/>
                     <Badge text="Go" color="blue" />
-                    <Badge text="PostgreSQL" color="gray" />
+                    <Badge text="PostgreSQL" color="gray"/>
                 </div>
-                <h1 className="font-bold text-3xl">Olá, meu nome é <span className="text-blue-500">Guilherme Buys</span></h1>
-                <p>Desenvolvedor FullStack em busca da primeira oportunidade profissional na área</p>
-                <div className="flex flex-row space-x-4 justify-center md:justify-start">
-                    <Link href="/docs/CV.pdf" className="bg-blue-600 hover:bg-blue-700 rounded-lg text-lg items-center flex flex-row gap-4 p-4" download={'/docs/CV.pdf'}><Download></Download> Meu Currículo</Link>
-                </div>
+                <h1 className="text-3xl font-bold">Olá, meu nome é <span className="text-blue-600">Guilherme Buys</span></h1>
+                <p>Desenvolvedor FullStack em busca da primeira experiência profissional</p>
+                <Link className="bg-blue-600 p-4 md:w-60 rounded-lg hover:bg-blue-700 cursor-pointer flex flex-row gap-4 justify-center md:justify-around w-full" href={'/docs/CV.pdf'} download={'/docs/CV.pdf'}><Download />Meu Currículo</Link>
             </div>
-            <img className="rounded-full border-4 border-blue-500 h-80 w-80 md:w-100 md:h-100" src={"https://avatars.githubusercontent.com/u/131329633?v=4"} alt="Foto de perfil Buys Code"/>
+            <img className="rounded-full border-4 border-blue-500 h-80 w-80 md:w-100 md:h-100" src={"https://avatars.githubusercontent.com/u/131329633?v=4"} alt="Foto de perfil Buys Code" />
         </div>
     )
 }
