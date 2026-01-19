@@ -6,7 +6,7 @@ export default function Hero() {
     return (
         <div id="#inicio" className="w-screen flex md:flex-row justify-around items-center mt-20 flex-col-reverse">
             <div className="flex flex-col space-y-4 text-center md:text-justify mt-8">
-                <div className="flex flex-row space-x-4 text-sm md:text-md w-full sm:w-[90%]">
+                <div className="grid grid-cols-2 space-y-2 md:flex md:flex-row space-x-4 p-4 text-xs md:text-md w-full sm:w-[90%]">
                     <Badge text="HTML" color="red"/>
                     <Badge text="CSS" color="blue" />
                     <Badge color="yellow" text="JS" />
