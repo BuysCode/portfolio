@@ -17,7 +17,7 @@ export default function Hero() {
                     <Badge text="PostgreSQL" color="gray" />
                 </div>
                 <h1 className="font-bold text-3xl">Olá, meu nome é <span className="text-blue-500">Guilherme Buys</span></h1>
-                <p>Sou um desenvolvedor FullStack em busca do primeiro emprego na área</p>
+                <p>Desenvolvedor FullStack em busca da primeira oportunidade profissional na área</p>
                 <div className="flex flex-row space-x-4 justify-center md:justify-start">
                     <Link href="/docs/CV.pdf" className="bg-blue-600 hover:bg-blue-700 rounded-lg text-lg items-center flex flex-row gap-4 p-4" download={'/docs/CV.pdf'}><Download></Download> Meu Currículo</Link>
                 </div>
