@@ -27,7 +27,7 @@ export default function ProjectCard({ description, name, tags, link }: Project) 
             </CardHeader>
             <CardContent className="flex flex-col space-y-4 justify-between">
                 <div className="flex flex-col space-y-2">
-                    <div className="grid grid-cols-3md:flex md:flex-row gap-4">
+                    <div className="grid grid-cols-3 md:flex md:flex-row gap-4">
                         {tags.map((e) => (
                             <Badge key={e.key} color={e.color} text={e.text} />
                         ))}
