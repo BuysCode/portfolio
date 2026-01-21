@@ -7,7 +7,7 @@ interface SidebarProps {
 
 function SidebarLink({ href, toggleSidebar, text }: Omit<SidebarProps, 'isOpen'> & { href: string ; text: string ; }) {
     return (
-        <li className="p-4 w-full border-b border-gray-700 cursor-pointer hover:bg-blue-500/20"><Link className="hover:underline hover:text-blue-500" href={href} onClick={toggleSidebar}>{text}</Link></li>
+        <li className="p-4 border-b border-gray-700 cursor-pointer hover:bg-blue-500/20"><Link className="hover:underline hover:text-blue-500" href={href} onClick={toggleSidebar}>{text}</Link></li>
     )
 }
 
