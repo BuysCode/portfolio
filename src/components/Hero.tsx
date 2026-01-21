@@ -4,7 +4,7 @@ import { Download } from 'lucide-react'
 
 export default function Hero() {
     return (
-        <div className="w-full mt-20 px-8 flex flex-col-reverse justify-around items-center md:flex-row">
+        <div id="home" className="w-full mt-20 px-8 flex flex-col-reverse justify-around items-center md:flex-row">
             <div className="text-center md:text-justify space-y-2 mt-8 md:mt-0">
                 <div className="grid grid-cols-3 space-y-4 md:flex md:flex-row space-x-2">
                     <Badge text="HTML" color="red"/>
