@@ -32,7 +32,7 @@ export default function Projects() {
                             {
                                 color: "gray",
                                 key: "openroute",
-                                text: "OpenRoute API"
+                                text: "OpenRouter API"
                             }
                         ]
                     }

@@ -34,7 +34,7 @@ export default function ProjectsPreview() {
                                 {
                                     color: "gray",
                                     key: "openroute",
-                                    text: "OpenRoute API"
+                                    text: "OpenRouter API"
                                 }
                             ]
                         }

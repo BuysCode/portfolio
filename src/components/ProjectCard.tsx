@@ -21,11 +21,11 @@ interface Project {
 
 export default function ProjectCard({ description, name, tags, link }: Project) {
     return (
-        <Card className="w-100 border-gray-600">
+        <Card className="py-4 px-2 border-gray-600">
             <CardHeader>
                 <CardTitle className="text-2xl font-bold">{name}</CardTitle>
             </CardHeader>
-            <CardContent className="flex flex-col space-y-4 justify-between">
+            <CardContent className="flex flex-col gap-2 justify-between">
                 <div className="flex flex-col space-y-2">
                     <div className="grid grid-cols-3 md:flex md:flex-row gap-4">
                         {tags.map((e) => (
