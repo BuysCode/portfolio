@@ -3,8 +3,8 @@
 import Link from "next/link";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "./ui/card";
 import Image from "next/image";
-import Badge from "./Badge";
 import { ArrowRightIcon } from "lucide-react";
+import TagBadge from "./Badge";
 
 interface Tag {
     text: string;
@@ -21,7 +21,7 @@ interface Project {
 
 export default function ProjectCard({ description, name, tags, link }: Project) {
     return (
-        <Card className="py-4 px-2 border-gray-600">
+        <Card className="py-4 px-2 border-gray-400 bg-gray-900">
             <CardHeader>
                 <CardTitle className="text-2xl font-bold">{name}</CardTitle>
             </CardHeader>
@@ -29,7 +29,7 @@ export default function ProjectCard({ description, name, tags, link }: Project) 
                 <div className="flex flex-col space-y-2">
                     <div className="grid grid-cols-3 md:flex md:flex-row gap-4">
                         {tags.map((e) => (
-                            <Badge key={e.key} color={e.color} text={e.text} />
+                            <TagBadge key={e.key} color={e.color} text={e.text} />
                         ))}
                     </div>
                     <p>{description}</p>

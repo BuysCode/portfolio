@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { BiRightArrowAlt } from "react-icons/bi";
 import ProjectCard from "./ProjectCard";
+import { projects } from "@/lib/data/static/projects";
 
 export default function ProjectsPreview() {
     return (
@@ -9,36 +10,17 @@ export default function ProjectsPreview() {
             <div className="flex flex-col mt-10 space-x-4">
                 <Link href={'/projects'} className="flex text-xl flex-row space-x-4 hover:underline hover:text-blue-600 items-center justify-end">Ver todos meus projetos <BiRightArrowAlt size={24} /></Link>
                 <div className="w-full flex flex-row items-center justify-between mt-10">
-                    <ProjectCard
-                        description="Chatbot como guia turístico da itália, personalizando e facilitando seus planejamentos."
-                        link="https://giovannibot.vercel.app"
-                        key={"giovanni"}
-                        name="GiovanniBot"
-                        tags={
-                            [
-                                {
-                                    color: "blue",
-                                    key: "react",
-                                    text: "ReactJS"
-                                },
-                                {
-                                    color: "red",
-                                    key: "html",
-                                    text: "HTML"
-                                },
-                                {
-                                    color: "blue",
-                                    key: "CSS",
-                                    text: "CSS"
-                                },
-                                {
-                                    color: "gray",
-                                    key: "openroute",
-                                    text: "OpenRouter API"
-                                }
-                            ]
-                        }
-                    />
+                    {
+                        projects.map((project, i) => (
+                            <ProjectCard
+                                description={project.description}
+                                link={project.link}
+                                key={i}
+                                name={project.name}
+                                tags={project.tags}
+                            />
+                        ))
+                    }
                 </div>
             </div>
         </div>
