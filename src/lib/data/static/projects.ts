@@ -1,15 +1,4 @@
-interface Tag {
-  text: string;
-  color: "red" | "gray" | "blue" | "yellow" | "green";
-  key: string
-}
-
-interface Project {
-  name: string;
-  description: string;
-  tags: Tag[];
-  link: string;
-}
+import type { Project } from "../../../../types/projects";
 
 export const projects: Project[] = [
   {

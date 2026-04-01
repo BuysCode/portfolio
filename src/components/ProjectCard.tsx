@@ -5,19 +5,7 @@ import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "./ui/card"
 import Image from "next/image";
 import { ArrowRightIcon } from "lucide-react";
 import TagBadge from "./Badge";
-
-interface Tag {
-    text: string;
-    color: "red" | "gray" | "blue" | "yellow";
-    key: string
-}
-
-interface Project {
-    name: string;
-    description: string;
-    tags: Tag[];
-    link: string;
-}
+import type { Project } from "../../types/projects";
 
 export default function ProjectCard({ description, name, tags, link }: Project) {
     return (
