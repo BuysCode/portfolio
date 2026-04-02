@@ -18,6 +18,7 @@ export default function ProjectsPreview() {
                                 key={i}
                                 name={project.name}
                                 tags={project.tags}
+                                github={project.github}
                             />
                         ))
                     }
