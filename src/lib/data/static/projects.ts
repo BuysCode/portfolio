@@ -69,5 +69,32 @@ export const projects: Project[] = [
         text: "SQLite",
       }
     ]
+  },
+  {
+    name: "CoinShift",
+    description: "Aplicativo de conversão de moedas, permitindo aos usuários converter valores entre diferentes moedas com taxas de câmbio atualizadas em tempo real.",
+    link: "https://coinshift.vercel.app",
+    tags: [
+      {
+        color: "blue",
+        key: "react",
+        text: "ReactJS",
+      },
+      {
+        color: "red",
+        key: "html",
+        text: "HTML",
+      },
+      {
+        color: "blue",
+        key: "CSS",
+        text: "CSS",
+      },
+      {
+        color: "gray",
+        key: "exchangerateapi",
+        text: "ExchangeRate API",
+      }
+    ]
   }
 ]

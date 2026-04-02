@@ -9,23 +9,30 @@ import type { Project } from "../../types/projects";
 
 export default function ProjectCard({ description, name, tags, link }: Project) {
     return (
-        <Card className="py-4 px-2 border-gray-400 bg-gray-900">
-            <CardHeader>
-                <CardTitle className="text-2xl font-bold">{name}</CardTitle>
+        <Card className="py-4 px-2 border-gray-400 bg-gray-900 h-full flex flex-col">
+            <CardHeader className="pb-2">
+                <CardTitle className="text-2xl font-bold line-clamp-2">{name}</CardTitle>
             </CardHeader>
-            <CardContent className="flex flex-col gap-2 justify-between">
-                <div className="flex flex-col space-y-2">
-                    <div className="grid grid-cols-3 md:flex md:flex-row gap-4">
+            <CardContent className="flex flex-col gap-2 justify-between flex-grow">
+                <div className="flex flex-col space-y-2 min-w-0">
+                    <div className="flex flex-wrap gap-2">
                         {tags.map((e) => (
                             <TagBadge key={e.key} color={e.color} text={e.text} />
                         ))}
                     </div>
-                    <p>{description}</p>
+                    <p className="text-sm line-clamp-3 break-words">{description}</p>
                 </div>
-                <Image height={300} width={300} alt={`Imagem de apresentação: ${name}`} src={`/projects/images/${name}.png`} />
+                <div className="w-full relative aspect-video overflow-hidden rounded-md mt-2">
+                    <Image 
+                        fill
+                        alt={`Imagem de apresentação: ${name}`} 
+                        src={`/projects/images/${name}.png`}
+                        className="object-cover"
+                    />
+                </div>
             </CardContent>
-            <CardFooter>
-                <Link className="bg-blue-600 hover:bg-blue-700 cursor-pointer p-4 rounded-lg flex flex-row gap-4 font-bold" target={"_blank"} href={link}>Visitar <ArrowRightIcon /></Link>
+            <CardFooter className="pt-2">
+                <Link className="bg-blue-600 hover:bg-blue-700 cursor-pointer p-4 rounded-lg flex flex-row gap-4 font-bold w-full justify-center truncate" target={"_blank"} href={link}>Visitar <ArrowRightIcon size={20} /></Link>
             </CardFooter>
         </Card>
     )

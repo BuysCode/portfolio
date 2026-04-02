@@ -9,7 +9,7 @@ export default function ProjectsPreview() {
             <h2 className="text-2xl font-bold text-center">Projetos</h2>
             <div className="flex flex-col mt-10 space-x-4">
                 <Link href={'/projects'} className="flex text-xl flex-row space-x-4 hover:underline hover:text-blue-600 items-center justify-end">Ver todos meus projetos <BiRightArrowAlt size={24} /></Link>
-                <div className="w-full flex flex-row items-center justify-between mt-10">
+                <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
                     {
                         projects.map((project, i) => (
                             <ProjectCard
