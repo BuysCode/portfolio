@@ -5,6 +5,7 @@ export const projects: Project[] = [
     name: "GiovanniBot",
     description: "Chatbot como guia turístico da itália, personalizando e facilitando seus planejamentos.",
     link: "https://giovannibot.vercel.app",
+    github: "https://github.com/buyscode/giovannibot",
     tags: [
       {
         color: "blue",
@@ -32,6 +33,7 @@ export const projects: Project[] = [
     name: "SkillsCheck Dev",
     description: "Quiz simples. Plataforma de avaliação de habilidades técnicas para desenvolvedores, oferecendo testes personalizados e feedback detalhado. (obs.: Semi-funcional, em desenvolvimento)",
     link: "https://skillscheck-dev.vercel.app",
+    github: "https://github.com/buyscode/skillscheck_dev",
     tags: [
       {
         color: "blue",
@@ -74,6 +76,7 @@ export const projects: Project[] = [
     name: "CoinShift",
     description: "Aplicativo de conversão de moedas, permitindo aos usuários converter valores entre diferentes moedas com taxas de câmbio atualizadas em tempo real.",
     link: "https://coinshift.vercel.app",
+    github: "https://github.com/buyscode/coinshift",
     tags: [
       {
         color: "blue",

@@ -9,4 +9,5 @@ export interface Project {
   description: string;
   tags: Tag[];
   link: string;
+  github: string;
 }
