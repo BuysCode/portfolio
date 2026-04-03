@@ -31,7 +31,7 @@ export default function ProjectCard({ description, name, tags, link, github }: P
                     />
                 </div>
             </CardContent>
-            <CardFooter className="pt-2">
+            <CardFooter className="pt-2 flex flex-col gap-2">
                 <Link className="bg-blue-600 hover:bg-blue-700 cursor-pointer p-4 rounded-lg flex flex-row gap-4 font-bold w-full justify-center truncate" target={"_blank"} href={link}>Visitar <ArrowRightIcon size={20} /></Link>
 
                 <Link className="bg-gray-600 hover:bg-gray-700 cursor-pointer p-4 rounded-lg flex flex-row gap-4 font-bold w-full justify-center truncate" target={"_blank"} href={github}>Código Fonte <ArrowRightIcon size={20} /></Link>
