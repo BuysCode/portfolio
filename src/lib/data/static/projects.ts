@@ -3,7 +3,7 @@ import type { Project } from "../../../../types/projects";
 export const projects: Project[] = [
   {
     name: "The Witcher Express",
-    description: "E-commerce de tecnologia estilo marketplace para Porto Alegre, com distribuidoras locais para entrega rapida. Design mistico estilo RPG.",
+    description: "E-commerce de tecnologia estilo marketplace para Porto Alegre, com distribuidoras locais para entrega rápida. Design místico estilo RPG.",
     link: "https://thewitcherexpress.vercel.app/",
     github: "https://github.com/BuysCode/thewitcherexpress_web/",
     tags: [
@@ -36,7 +36,7 @@ export const projects: Project[] = [
   },
   {
     name: "BpmReview",
-    description: "Plataforma de resenhas de musicas no estilo LetterBoxd, onde usuarios buscam albuns e artistas pelo catalogo da MusicBrainz e deixam seus comentários.",
+    description: "Plataforma de resenhas de músicas no estilo LetterBoxd, onde usuários buscam álbuns e artistas pelo catálogo da MusicBrainz e deixam seus comentários.",
     link: "https://bpmreview.vercel.app/",
     github: "https://github.com/BuysCode/bpm-review/",
     tags: [

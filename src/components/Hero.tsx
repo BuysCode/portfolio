@@ -22,12 +22,12 @@ export default function Hero() {
         <div className="flex-1 text-center lg:text-left space-y-8">
           <div className="space-y-4">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
-              Ola, eu sou{" "}
+              Olá, eu sou{" "}
               <span className="text-accent">Guilherme Buys</span>
             </h1>
             <p className="text-lg sm:text-xl text-text-muted max-w-xl mx-auto lg:mx-0">
               Desenvolvedor Full-Stack autodidata, construindo projetos reais
-              desde cedo. Atualmente cursando Ciencia da Computacao.
+              desde cedo. Atualmente cursando Ciência da Computação.
             </p>
           </div>
 
@@ -56,7 +56,7 @@ export default function Hero() {
               className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-bg-card text-text rounded-btn font-semibold border border-border hover:border-accent hover:text-accent transition-colors duration-200"
             >
               <Download size={18} />
-              Curriculo
+              Currículo
             </a>
           </div>
 

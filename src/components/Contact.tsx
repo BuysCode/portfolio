@@ -7,7 +7,7 @@ export default function Contact() {
         <div className="text-center space-y-4">
           <h2 className="text-3xl sm:text-4xl font-bold">Contato</h2>
           <p className="text-text-muted max-w-2xl mx-auto">
-            Tem um projeto em mente ou quer conversar? Estou disponivel para
+            Tem um projeto em mente ou quer conversar? Estou disponível para
             oportunidades.
           </p>
         </div>

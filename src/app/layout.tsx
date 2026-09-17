@@ -13,7 +13,7 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Guilherme Buys | Desenvolvedor Full-Stack",
   description:
-    "Portfolio de Guilherme Buys — desenvolvedor full-stack autodidata, especializado em Next.js, TypeScript e Go.",
+    "Portfólio de Guilherme Buys — desenvolvedor full-stack autodidata, especializado em Next.js, TypeScript e Go.",
 };
 
 export default function RootLayout({

@@ -6,7 +6,7 @@ import { useTheme } from "next-themes";
 import { Menu, X, Sun, Moon } from "lucide-react";
 
 const navLinks = [
-  { href: "#inicio", label: "Inicio" },
+  { href: "#inicio", label: "Início" },
   { href: "#sobre", label: "Sobre" },
   { href: "#projetos", label: "Projetos" },
   { href: "#contato", label: "Contato" },

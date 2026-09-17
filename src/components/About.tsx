@@ -12,20 +12,20 @@ export default function About() {
         <div className="bg-bg-card rounded-card p-8 sm:p-12 shadow-lg border border-border/50">
           <div className="space-y-6 text-text-muted leading-relaxed">
             <p className="text-lg">
-              Comecei no mundo da programacao em 2021, criando bots para Discord.
+              Comecei no mundo da programação em 2021, criando bots para Discord.
               Dois anos depois, descobri o desenvolvimento web e me apaixonei.
             </p>
             <p>
-              No Ensino Medio, entrei para uma escola tecnica em desenvolvimento
-              web fullstack e mobile. Logo me destaquei pela experiencia previa.
-              Quando percebi que estava mais avancado que o conteudo ensinado,
-              optei por sair e seguir meu proprio caminho.
+              No Ensino Médio, entrei para uma escola técnica em desenvolvimento
+              web fullstack e mobile. Logo me destaquei pela experiência prévia.
+              Quando percebi que estava mais avançado que o conteúdo ensinado,
+              optei por sair e seguir meu próprio caminho.
             </p>
             <p>
-              Hoje, curso Ciencia da Computacao na UniRitter e continuo
+              Hoje, curso Ciência da Computação na UniRitter e continuo
               aprimorando minhas habilidades em projetos reais. Acredito que a
-              melhor forma de aprender e construindo — e exatamente isso que
-              faco.
+              melhor forma de aprender é construindo — e é exatamente isso que
+              faço.
             </p>
           </div>
 

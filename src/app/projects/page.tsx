@@ -11,7 +11,7 @@ export default function ProjectsPage() {
           <div className="text-center space-y-4">
             <h1 className="text-3xl sm:text-4xl font-bold">Meus Projetos</h1>
             <p className="text-text-muted max-w-2xl mx-auto">
-              Uma colecao dos projetos que construi para aplicar e consolidar
+              Uma coleção dos projetos que construí para aplicar e consolidar
               meus conhecimentos em desenvolvimento web.
             </p>
           </div>
