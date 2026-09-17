@@ -45,7 +45,7 @@ export default function Hero() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
             <a
               href="#contato"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-accent text-white rounded-btn font-semibold hover:bg-accent-hover transition-colors duration-200 shadow-lg"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-accent text-bg rounded-btn font-semibold hover:bg-accent-hover transition-colors duration-200 shadow-lg"
             >
               <Mail size={18} />
               Fale Comigo

@@ -2,7 +2,8 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { useTheme } from "next-themes";
+import { Menu, X, Sun, Moon } from "lucide-react";
 
 const navLinks = [
   { href: "#inicio", label: "Inicio" },
@@ -13,6 +14,7 @@ const navLinks = [
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const { theme, setTheme } = useTheme();
 
   return (
     <header className="sticky top-0 z-50 bg-bg/95 backdrop-blur-sm border-b border-border/30">
@@ -33,14 +35,25 @@ export default function Header() {
           ))}
         </nav>
 
-        <button
-          className="md:hidden p-3 rounded-btn hover:bg-accent/10 transition-colors"
-          onClick={() => setIsOpen(!isOpen)}
-          aria-label={isOpen ? "Fechar menu" : "Abrir menu"}
-          aria-expanded={isOpen}
-        >
-          {isOpen ? <X size={22} /> : <Menu size={22} />}
-        </button>
+        <div className="flex items-center gap-2">
+          <button
+            className="p-3 rounded-btn hover:bg-accent/10 transition-colors"
+            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+            aria-label="Trocar tema"
+          >
+            <Sun size={18} className="hidden dark:block" />
+            <Moon size={18} className="block dark:hidden" />
+          </button>
+
+          <button
+            className="md:hidden p-3 rounded-btn hover:bg-accent/10 transition-colors"
+            onClick={() => setIsOpen(!isOpen)}
+            aria-label={isOpen ? "Fechar menu" : "Abrir menu"}
+            aria-expanded={isOpen}
+          >
+            {isOpen ? <X size={22} /> : <Menu size={22} />}
+          </button>
+        </div>
       </div>
 
       {isOpen && (

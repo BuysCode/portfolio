@@ -2,6 +2,62 @@ import type { Project } from "../../../../types/projects";
 
 export const projects: Project[] = [
   {
+    name: "The Witcher Express",
+    description: "E-commerce de tecnologia estilo marketplace para Porto Alegre, com distribuidoras locais para entrega rapida. Design mistico estilo RPG.",
+    link: "https://thewitcherexpress.vercel.app/",
+    github: "https://github.com/BuysCode/thewitcherexpress_web/",
+    tags: [
+      {
+        color: "gray",
+        key: "next",
+        text: "Next.js",
+      },
+      {
+        color: "blue",
+        key: "express",
+        text: "Express.js",
+      },
+      {
+        color: "green",
+        key: "prisma",
+        text: "Prisma ORM",
+      },
+      {
+        color: "gray",
+        key: "sqlite",
+        text: "SQLite",
+      },
+      {
+        color: "red",
+        key: "jwt",
+        text: "JWT",
+      },
+    ],
+  },
+  {
+    name: "BpmReview",
+    description: "Plataforma de resenhas de musicas no estilo LetterBoxd, onde usuarios buscam albuns e artistas pelo catalogo da MusicBrainz e deixam seus comentários.",
+    link: "https://bpmreview.vercel.app/",
+    github: "https://github.com/BuysCode/bpm-review/",
+    tags: [
+      {
+        color: "gray",
+        key: "next",
+        text: "Next.js",
+      },
+      {
+        color: "blue",
+        key: "appwrite",
+        text: "Appwrite",
+      },
+      {
+        color: "gray",
+        key: "musicbrainz",
+        text: "MusicBrainz API",
+      },
+    ],
+  },
+  {
     name: "GiovanniBot",
     description: "Chatbot como guia turístico da itália, personalizando e facilitando seus planejamentos.",
     link: "https://giovannibot.vercel.app",
@@ -10,7 +66,7 @@ export const projects: Project[] = [
       {
         color: "blue",
         key: "react",
-        text: "ReactJS",
+        text: "Next.js",
       },
       {
         color: "red",
@@ -38,7 +94,7 @@ export const projects: Project[] = [
       {
         color: "blue",
         key: "react",
-        text: "ReactJS",
+        text: "Next.js",
       },
       {
         color: "red",
@@ -56,14 +112,9 @@ export const projects: Project[] = [
         text: "TypeScript",
       },
       {
-        color: "gray",
-        key: "next",
-        text: "NextJS",
-      },
-      {
         color: "green",
         key: "prisma",
-        text: "Prisma",
+        text: "Prisma ORM",
       },
       {
         color: "gray",
@@ -81,7 +132,7 @@ export const projects: Project[] = [
       {
         color: "blue",
         key: "react",
-        text: "ReactJS",
+        text: "Next.js",
       },
       {
         color: "red",

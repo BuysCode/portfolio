@@ -65,7 +65,7 @@ export default function Contact() {
           <div className="mt-10 text-center">
             <a
               href="mailto:guilherme@buyscode.dev"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-accent text-white rounded-btn font-semibold hover:bg-accent-hover transition-colors duration-200 shadow-lg"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-accent text-bg rounded-btn font-semibold hover:bg-accent-hover transition-colors duration-200 shadow-lg"
             >
               <Send size={18} />
               Enviar Mensagem

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
+import { ThemeProvider } from "next-themes";
 import "./globals.css";
 
 const poppins = Poppins({
@@ -12,7 +13,7 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Guilherme Buys | Desenvolvedor Full-Stack",
   description:
-    "Portfólio de Guilherme Buys — desenvolvedor full-stack autodidata, especializado em Next.js, TypeScript e Go.",
+    "Portfolio de Guilherme Buys — desenvolvedor full-stack autodidata, especializado em Next.js, TypeScript e Go.",
 };
 
 export default function RootLayout({
@@ -21,8 +22,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR" className={poppins.variable}>
-      <body className="antialiased">{children}</body>
+    <html lang="pt-BR" className={poppins.variable} suppressHydrationWarning>
+      <body className="antialiased">
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          {children}
+        </ThemeProvider>
+      </body>
     </html>
   );
 }

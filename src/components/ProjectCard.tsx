@@ -35,7 +35,7 @@ export default function ProjectCard({
           href={link}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-3 bg-accent text-white rounded-btn text-sm font-semibold hover:bg-accent-hover transition-colors duration-200"
+          className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-3 bg-accent text-bg rounded-btn text-sm font-semibold hover:bg-accent-hover transition-colors duration-200"
         >
           <ExternalLink size={16} />
           Ver Projeto
