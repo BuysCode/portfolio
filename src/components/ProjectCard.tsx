@@ -1,41 +1,55 @@
-"use client"
+"use client";
 
 import Link from "next/link";
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "./ui/card";
-import Image from "next/image";
-import { ArrowRightIcon } from "lucide-react";
-import TagBadge from "./Badge";
+import { ExternalLink, Github } from "lucide-react";
 import type { Project } from "../../types/projects";
 
-export default function ProjectCard({ description, name, tags, link, github }: Project) {
-    return (
-        <Card className="py-4 px-2 border-gray-400 bg-gray-900 h-full flex flex-col">
-            <CardHeader className="pb-2">
-                <CardTitle className="text-2xl font-bold line-clamp-2">{name}</CardTitle>
-            </CardHeader>
-            <CardContent className="flex flex-col gap-2 justify-between grow">
-                <div className="flex flex-col space-y-2 min-w-0">
-                    <div className="flex flex-wrap gap-2">
-                        {tags.map((e) => (
-                            <TagBadge key={e.key} color={e.color} text={e.text} />
-                        ))}
-                    </div>
-                    <p className="text-sm line-clamp-3 wrap-break-words">{description}</p>
-                </div>
-                <div className="w-full relative aspect-video overflow-hidden rounded-md mt-2">
-                    <Image 
-                        fill
-                        alt={`Imagem de apresentação: ${name}`} 
-                        src={`/projects/images/${name}.png`}
-                        className="object-cover"
-                    />
-                </div>
-            </CardContent>
-            <CardFooter className="pt-2 flex flex-col gap-2">
-                <Link className="bg-blue-600 hover:bg-blue-700 cursor-pointer p-4 rounded-lg flex flex-row gap-4 font-bold w-full justify-center truncate" target={"_blank"} href={link}>Visitar <ArrowRightIcon size={20} /></Link>
+export default function ProjectCard({
+  name,
+  description,
+  tags,
+  link,
+  github,
+}: Project) {
+  return (
+    <div className="bg-bg-card rounded-card p-6 sm:p-8 shadow-lg border border-border/50 flex flex-col h-full hover:shadow-xl transition-shadow duration-300">
+      <div className="flex-1 space-y-4">
+        <h3 className="text-xl font-bold">{name}</h3>
+        <p className="text-text-muted text-sm leading-relaxed">
+          {description}
+        </p>
+        <div className="flex flex-wrap gap-2">
+          {tags.map((tag) => (
+            <span
+              key={tag.key}
+              className="px-3 py-1 bg-accent/10 text-accent rounded-pill text-xs font-medium"
+            >
+              {tag.text}
+            </span>
+          ))}
+        </div>
+      </div>
 
-                <Link className="bg-gray-600 hover:bg-gray-700 cursor-pointer p-4 rounded-lg flex flex-row gap-4 font-bold w-full justify-center truncate" target={"_blank"} href={github}>Código Fonte <ArrowRightIcon size={20} /></Link>
-            </CardFooter>
-        </Card>
-    )
+      <div className="flex gap-3 mt-6 pt-6 border-t border-border/50">
+        <Link
+          href={link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-3 bg-accent text-white rounded-btn text-sm font-semibold hover:bg-accent-hover transition-colors duration-200"
+        >
+          <ExternalLink size={16} />
+          Ver Projeto
+        </Link>
+        <Link
+          href={github}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-3 bg-bg text-text rounded-btn text-sm font-semibold border border-border hover:border-accent hover:text-accent transition-colors duration-200"
+        >
+          <Github size={16} />
+          Codigo
+        </Link>
+      </div>
+    </div>
+  );
 }

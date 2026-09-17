@@ -5,12 +5,14 @@ import "./globals.css";
 const poppins = Poppins({
   weight: ["400", "500", "600", "700"],
   subsets: ["latin"],
-  variable: "--font-poppins"
-})
+  variable: "--font-poppins",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
-  title: "BuysCode - Portfolio",
-  description: "Portfolio website built with Next.js and Tailwind CSS",
+  title: "Guilherme Buys | Desenvolvedor Full-Stack",
+  description:
+    "Portfólio de Guilherme Buys — desenvolvedor full-stack autodidata, especializado em Next.js, TypeScript e Go.",
 };
 
 export default function RootLayout({
@@ -19,12 +21,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR">
-      <body
-        className={`${poppins.variable} antialiased bg-gray-950 text-white overflow-x-hidden`} suppressHydrationWarning
-      >
-        {children}
-      </body>
+    <html lang="pt-BR" className={poppins.variable}>
+      <body className="antialiased">{children}</body>
     </html>
   );
 }
