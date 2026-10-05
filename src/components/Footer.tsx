@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Github, Instagram, Mail, MessageCircle } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -20,16 +20,25 @@ export default function Footer() {
             <Github size={18} />
           </a>
           <a
-            href="https://linkedin.com/in/guilhermebuys"
+            href="https://instagram.com/buyscode__"
             target="_blank"
             rel="noopener noreferrer"
             className="p-3 rounded-btn text-text-muted hover:text-accent hover:bg-accent/10 transition-colors duration-200"
-            aria-label="LinkedIn"
+            aria-label="Instagram"
           >
-            <Linkedin size={18} />
+            <Instagram size={18} />
           </a>
           <a
-            href="mailto:guilherme@buyscode.dev"
+            href="https://wa.me/5521978207000"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-3 rounded-btn text-text-muted hover:text-accent hover:bg-accent/10 transition-colors duration-200"
+            aria-label="WhatsApp"
+          >
+            <MessageCircle size={18} />
+          </a>
+          <a
+            href="mailto:buysdev.pro@gmail.com"
             className="p-3 rounded-btn text-text-muted hover:text-accent hover:bg-accent/10 transition-colors duration-200"
             aria-label="E-mail"
           >

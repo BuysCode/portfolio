@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Download, Github, Linkedin, Mail } from "lucide-react";
+import { Download, Github, Instagram, Mail } from "lucide-react";
 
 const techStack = [
   "Next.js",
@@ -70,13 +70,13 @@ export default function Hero() {
               <Github size={20} />
             </a>
             <a
-              href="https://linkedin.com/in/guilhermebuys"
+              href="https://instagram.com/buyscode__"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-btn bg-bg-card border border-border hover:border-accent hover:text-accent transition-all duration-200"
-              aria-label="LinkedIn"
+              aria-label="Instagram"
             >
-              <Linkedin size={20} />
+              <Instagram size={20} />
             </a>
           </div>
         </div>
