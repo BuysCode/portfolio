@@ -5,7 +5,6 @@ const techStack = [
   "Next.js",
   "TypeScript",
   "React",
-  "Go",
   "PostgreSQL",
   "Tailwind CSS",
   "Node.js",

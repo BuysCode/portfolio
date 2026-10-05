@@ -16,7 +16,7 @@ Personal portfolio website to showcase Guilherme Buys' development skills, proje
 
 ## Positioning
 
-Differentiated by a compelling autodidactic narrative — a developer who left technical school early due to exceeding the curriculum pace, now pursuing Computer Science at UniRitter. Combines full-stack web development (Next.js/TypeScript) with backend systems programming (Go).
+Differentiated by a compelling autodidactic narrative — a developer who left technical school early due to exceeding the curriculum pace, now pursuing Computer Science at UniRitter. Combines full-stack web development (Next.js/TypeScript) with backend API development.
 
 ## Operating Context
 
@@ -43,7 +43,7 @@ Visitors arrive via direct links (resume, social media), search, or referrals. T
 - Profile photo: `https://avatars.githubusercontent.com/u/131329633?v=4`
 - Resume PDF: `/docs/Resume.pdf`
 - Existing project components in `src/components/`
-- Tech stack badges: HTML, CSS, JS, TypeScript, Next.js, Fastify, Go, PostgreSQL
+- Tech stack badges: HTML, CSS, JS, TypeScript, Next.js, Fastify, PostgreSQL
 
 ## Product Principles
 
