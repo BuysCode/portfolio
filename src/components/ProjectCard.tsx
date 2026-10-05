@@ -40,15 +40,17 @@ export default function ProjectCard({
           <ExternalLink size={16} />
           Ver Projeto
         </Link>
-        <Link
-          href={github}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-3 bg-bg text-text rounded-btn text-sm font-semibold border border-border hover:border-accent hover:text-accent transition-colors duration-200"
-        >
-          <Github size={16} />
-          Código
-        </Link>
+        {github && (
+          <Link
+            href={github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-3 bg-bg text-text rounded-btn text-sm font-semibold border border-border hover:border-accent hover:text-accent transition-colors duration-200"
+          >
+            <Github size={16} />
+            Código
+          </Link>
+        )}
       </div>
     </div>
   );

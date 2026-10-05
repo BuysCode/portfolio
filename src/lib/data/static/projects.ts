@@ -2,6 +2,28 @@ import type { Project } from "../../../../types/projects";
 
 export const projects: Project[] = [
   {
+    name: "Faro Varejista",
+    description: "Landing page do Faro, guia inteligente que localiza qualquer produto dentro do mercado — preço, estoque e corredor/prateleira exatos, com rota até o item. Protótipo criado em dupla em 2 dias durante jam da faculdade (APPJAM) para solucionar dores do varejo.",
+    link: "https://farovarejista.vercel.app/",
+    tags: [
+      {
+        color: "gray",
+        key: "next",
+        text: "Next.js",
+      },
+      {
+        color: "blue",
+        key: "tailwind",
+        text: "Tailwind CSS",
+      },
+      {
+        color: "blue",
+        key: "typescript",
+        text: "TypeScript",
+      },
+    ],
+  },
+  {
     name: "The Witcher Express",
     description: "E-commerce de tecnologia estilo marketplace para Porto Alegre, com distribuidoras locais para entrega rápida. Design místico estilo RPG.",
     link: "https://thewitcherexpress.vercel.app/",
